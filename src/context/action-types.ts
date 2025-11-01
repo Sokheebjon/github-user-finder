@@ -1,0 +1,14 @@
+export const ActionType = {
+  SET_LOADING: 'SET_LOADING',
+  SET_ERROR: 'SET_ERROR',
+  SET_USER_DATA: 'SET_USER_DATA',
+  SET_REPOS: 'SET_REPOS',
+  APPEND_REPOS: 'APPEND_REPOS',
+  TOGGLE_DARK_MODE: 'TOGGLE_DARK_MODE',
+  SET_DARK_MODE: 'SET_DARK_MODE',
+  SET_CURRENT_PAGE: 'SET_CURRENT_PAGE',
+  SET_HAS_MORE: 'SET_HAS_MORE',
+  RESET_STATE: 'RESET_STATE',
+} as const;
+
+export type ActionType = typeof ActionType[keyof typeof ActionType];
